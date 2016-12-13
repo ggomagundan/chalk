@@ -9,6 +9,9 @@ layout: default
         <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
           <h5>{{ post.title }}</h5>
         </a>
+        {% if post.project-url %}
+          <p class="project-link"> <a href="{{post.project-url}}" target="_blank"> <i class="icon icon-paper-airplane" aria-hidden="true"></i> Move to Project</a></p>
+        {% endif %}
         <p>{{ post.description }}</p>
         <div class="article-list-footer">
           <span class="article-list-date">
