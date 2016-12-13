@@ -172,8 +172,14 @@
 }
 
 .article-share {
+  border-top: 1px solid $base-border-color;
   display: block;
   margin-top: -4px;
+  padding-top: 10px;
+  span.share-title{
+    margin: 0 15px;
+
+  }
   a {
     display: inline-block;
     margin-right: 10px;

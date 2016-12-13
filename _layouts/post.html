@@ -8,7 +8,11 @@
         {% include navigation.html %}
         <article class="article reveal">
           <header class="article-header">
-            <h1>{{ page.title }}</h1>
+            <h1>{{ page.title }}
+            {% if page.project-url %}
+              <span class="project-link"> <a href="{{page.project-url}}" target="_blank"> <i class="icon icon-paper-airplane" aria-hidden="true"></i> Move to Project</a></span>
+            {% endif %}
+            </h1>
             <p>{{ page.description }}</p>
             <div class="article-list-footer">
               <span class="article-list-date">
@@ -37,6 +41,7 @@
           </div>
 
           <div class="article-share">
+            <span class="share-title">Share</span>
             {% assign page_title = page.title  | truncate '110' %}
             <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page_title }} - {{ page.url | absolute_url }} {% if site.social.twitter %}by @{{ site.social.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;">
               <span class="icon icon-social-twitter"></span>

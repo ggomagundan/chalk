@@ -1,6 +1,6 @@
 # Mandatory settings
 
-name: Chalk
+name: GGoMaGunDan
 paginate: 25
 paginate_path: "/posts/page/:num/"
 url: # add site url http://example.com/
@@ -15,10 +15,10 @@ social:
   dribbble: # Add your Dribbble handle
   facebook: # Add your Facebook handle
   github: ggomagundan
-  linkedin: # Add your LinkedIn handle
+  linkedin: kai-park
   twitter: # Add your Twitter handle
-  email: # Add your Email address
-  bitcoin: # Add your Bitcoin link or address
+  email: ggogun@gmail.com
+  bitcoin: 16MdVNJgvGYbVuaC6KrjGNy2RCrNsaPaZz
 
 # Important settings (change at own risk)
 
